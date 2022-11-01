@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/masterLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.AddUserWeightActivity"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarThumbVertical="@drawable/scrollbar_turquoise">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:background="@drawable/card_turquoise"
+                style="@style/ColoredLinearLayout">
+
+                <TextView
+                    android:text="@string/equipment"
+                    style="@style/TextViewTitleWhiteStyle"/>
+
+                <TextView
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:text="@string/choose_equipment_type"
+                    style="@style/TextViewColoredCardStyle"
+                    android:gravity="start"/>
+
+                <Spinner
+                    android:id="@+id/equipmentSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorWhite" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/WhiteLinearLayoutStyle">
+
+                <TextView
+                    android:text="@string/details"
+                    android:textColor="@color/colorTurquoise"
+                    style="@style/TextViewTitleWhiteStyle"/>
+
+                <View
+                    android:background="@drawable/button_turquoise_normal"
+                    style="@style/LineStyle"/>
+
+                <LinearLayout
+                    android:id="@+id/linerLayoutAbs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:layout_marginTop="@dimen/margin_small">
+
+                    <TextView
+                        android:text="@string/weight"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.4"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <EditText
+                        android:id="@+id/weightEditText"
+                        android:layout_width="0dp"
+                        android:layout_weight="1.4"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/margin"
+                        android:inputType="numberDecimal"
+                        android:gravity="center"
+                        />
+
+                    <TextView
+                        android:text="@string/kg"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.2"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin"
+                        android:gravity="start"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:text="@string/count"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.4"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <EditText
+                        android:id="@+id/countEditText"
+                        android:layout_width="0dp"
+                        android:layout_weight="1.6"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/margin"
+                        android:inputType="number"
+                        android:gravity="center"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/saveButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin"
+                style="@style/TurquoiseButtonStyle"
+                android:text="@string/save"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

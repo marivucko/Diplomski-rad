@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:id="@+id/masterLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.training.TrainingStartFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_registration"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/gradient_registration"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/training_nstarts_in"
+            android:gravity="center"
+            android:textAllCaps="true"
+            android:textSize="26sp"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            android:layout_above="@id/timerTextView"/>
+
+        <TextView
+            android:id="@+id/timerTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="120sp"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:textColor="@color/colorWhite"
+            />
+
+        <TextView
+            android:text="@string/long_press_the_screen_to_skip_the_countdown"
+            style="@style/BottomExplainTextViewStyle"/>
+
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.gymdroid.domain.beans.TrainingWorkout" table="training_workout">
+        <id name="trainingWorkoutId" type="int" column="trainingWorkoutId">
+            <generator class="native"/>
+        </id>
+        <property name="orderNumber" column="orderNumber" type="int"/>
+        <property name="durationOfPauseBetweenSets" column="durationOfPauseBetweenSets" type="long"/>
+        <property name="trainingId" column="trainingId" type="int"/>
+        <property name="workoutId" column="workoutId" type="int"/>
+        <property name="createdAt" column="createdAt" type="timestamp"/>
+        <property name="updatedAt" column="updatedAt" type="timestamp"/>
+        <property name="deletedAt" column="deletedAt" type="timestamp"/>
+    </class>
+</hibernate-mapping>

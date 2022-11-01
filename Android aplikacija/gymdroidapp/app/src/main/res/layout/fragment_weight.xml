@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tableTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/weight_history"
+        style="@style/TableTitleTextView"
+        />
+
+    <LinearLayout
+        android:id="@+id/tableHeader"
+        android:layout_below="@id/tableTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="12"
+        android:paddingTop="@dimen/padding_small"
+        android:paddingBottom="12dp"
+        android:background="@drawable/table_border_background">
+
+        <TextView
+            android:id="@+id/numerationTextView"
+            android:layout_width="0dp"
+            android:layout_weight="1.5"
+            android:layout_height="wrap_content"
+            style="@style/TableHeaderTextView" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="4.5"
+            android:layout_height="wrap_content"
+            android:text="@string/weight"
+            style="@style/TableHeaderTextView" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="4.5"
+            android:layout_height="wrap_content"
+            android:text="@string/date"
+            style="@style/TableHeaderTextView" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1.5"
+            android:layout_height="wrap_content"
+            style="@style/TableHeaderTextView" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tableHeader"
+        android:layout_above="@id/addWeightButton"
+        android:scrollbarThumbVertical="@drawable/scrollbar_blue">
+
+        <LinearLayout
+            android:id="@+id/weightListLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/addWeightButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/margin"
+        android:text="@string/add_weight"
+        style="@style/BlueButtonStyle"/>
+
+</RelativeLayout>

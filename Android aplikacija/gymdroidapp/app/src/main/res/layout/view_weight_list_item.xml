@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="12"
+    android:padding="@dimen/padding_small"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/numerationTextView"
+        android:layout_width="0dp"
+        android:layout_weight="1.5"
+        android:layout_height="wrap_content"
+        style="@style/TableItemNumerationTextView"/>
+
+    <TextView
+        android:id="@+id/weightTextView"
+        android:layout_width="0dp"
+        android:layout_weight="4.5"
+        android:layout_height="wrap_content"
+        style="@style/TableItemTextView"/>
+
+    <TextView
+        android:id="@+id/dateTextView"
+        android:layout_width="0dp"
+        android:layout_weight="4.5"
+        android:layout_height="wrap_content"
+        style="@style/TableItemTextView"/>
+
+    <ImageButton
+        android:id="@+id/detailsButton"
+        android:layout_width="0dp"
+        android:layout_weight="1.5"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding"
+        android:src="@drawable/ic_details"
+        style="@style/BlueButtonStyle"/>
+
+</LinearLayout>

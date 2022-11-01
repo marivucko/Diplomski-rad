@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="padding_small">4dp</dimen>
+    <dimen name="padding">8dp</dimen>
+    <dimen name="padding_medium">16dp</dimen>
+    <dimen name="padding_large">32dp</dimen>
+
+    <dimen name="margin_small">4dp</dimen>
+    <dimen name="margin">8dp</dimen>
+    <dimen name="margin_medium">16dp</dimen>
+    <dimen name="margin_large">32dp</dimen>
+    <dimen name="margin_navigation_bar">48dp</dimen>
+
+    <dimen name="corner_radius_small">4dp</dimen>
+    <dimen name="corner_radius">8dp</dimen>
+    <dimen name="corner_radius_medium">16dp</dimen>
+    <dimen name="corner_radius_large">32dp</dimen>
+
+    <dimen name="text_size_base">18sp</dimen>
+    <dimen name="text_title_size">20sp</dimen>
+
+    /// card dimensions
+    <dimen name="card_title_size">20sp</dimen>
+    <dimen name="card_highlight_size">13sp</dimen>
+    <dimen name="card_text_size">14sp</dimen>
+
+    /// ordinary dimensions
+    <dimen name="ordinary_title_size">28sp</dimen>
+    <dimen name="ordinary_title_smaller_size">22sp</dimen>
+    <dimen name="ordinary_text_size">16sp</dimen>
+
+</resources>

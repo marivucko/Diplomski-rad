@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.gymdroid.domain.beans.DoneSet" table="done_set">
+        <id name="doneSetId" type="int" column="doneSetId">
+            <generator class="native"/> 
+        </id> 
+        <property name="doneSetNumberOfReps" column="doneSetNumberOfReps" type="int"/>
+        <property name="doneSetWeight" column="doneSetWeight" type="double"/>
+        <property name="doneSetTimeInMilliseconds" column="doneSetTimeInMilliseconds" type="int"/>
+        <property name="doneWorkoutId" column="doneWorkoutId" type="int"/>
+        <property name="createdAt" column="createdAt" type="timestamp"/>
+        <property name="updatedAt" column="updatedAt" type="timestamp"/>
+        <property name="deletedAt" column="deletedAt" type="timestamp"/>
+    </class>
+</hibernate-mapping>
+

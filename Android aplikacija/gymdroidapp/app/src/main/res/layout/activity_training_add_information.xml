@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/masterLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.training.TrainingAddInformationActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin"
+                android:text="@string/new_training"
+                style="@style/OrdinaryTitleTextViewStyle" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/OrdinaryTextViewStyle"
+                android:text="@string/congratulation_you_are_a_few_steps_from_creating_a_new_training_plan"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/training_name"
+                style="@style/OrdinaryTitleSmallerTextViewStyle" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/OrdinaryTextViewStyle"
+                android:text="@string/please_insert_your_training_name_so_you_can_recognize_it_in_a_group_of_many_other"
+                />
+
+            <EditText
+                android:id="@+id/trainingNameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textCapSentences"
+                style="@style/OrdinaryEditTextStyle"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_small"
+                android:text="@string/training_description"
+                style="@style/OrdinaryTitleSmallerTextViewStyle" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/OrdinaryTextViewStyle"
+                android:text="@string/please_insert_your_training_description_so_you_can_later_now_what_to_do_during_the_session"
+                />
+
+            <EditText
+                android:id="@+id/trainingDescriptionEditText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textCapSentences"
+                style="@style/OrdinaryEditTextStyle"/>
+
+            <TextView
+                android:layout_marginTop="@dimen/margin_small"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/training_intense_level"
+                style="@style/OrdinaryTitleSmallerTextViewStyle" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/OrdinaryTextViewStyle"
+                android:text="@string/intensity_level_of_workout_show_to_other_users_if_this_workout_is_for_beginners_or_advanced_users"
+                />
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/margin"
+                android:background="@drawable/card_purple"
+                style="@style/ColoredLinearLayout">
+
+                <TextView
+                    android:text="@string/select_training_intense_level"
+                    style="@style/TextViewTitleWhiteStyle"/>
+
+                <Spinner
+                    android:id="@+id/intensitySpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorWhite"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginTop="@dimen/margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/pause_between_workouts"
+                style="@style/OrdinaryTitleSmallerTextViewStyle" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_marginTop="@dimen/margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/OrdinaryTextViewStyle"
+                android:text="@string/every_training_consists_of_a_few_workouts_and_after_each_the_pause_is_needed_by_selecting_this_time_you_will_create_timer_that_will_start_between_every_workout"
+                />
+
+            <EditText
+                android:id="@+id/timerEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                style="@style/OrdinaryTitleSmallerTextViewStyle"/>
+
+            <Button
+                android:id="@+id/nextButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin"
+                android:text="@string/next"
+                style="@style/PurpleButtonStyle"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

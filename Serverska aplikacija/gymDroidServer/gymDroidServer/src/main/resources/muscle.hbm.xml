@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.gymdroid.domain.beans.Muscle" table="muscle">
+        <id name="muscleId" type="int" column="muscleId">
+            <generator class="native"/> 
+        </id> 
+        <property name="muscleName" column="muscleName" type="string"/>
+        <property name="muscleSize" column="muscleSize" type="double"/>
+        <property name="muscleGroupId" column="muscleGroupId" type="int"/>
+        <property name="createdAt" column="createdAt" type="timestamp"/>
+        <property name="updatedAt" column="updatedAt" type="timestamp"/>
+        <property name="deletedAt" column="deletedAt" type="timestamp"/>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gymdroid">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activities.TrainingActivity"></activity>
+        <activity android:name=".activities.training.TrainingAddFinishActivity" />
+        <activity android:name=".activities.training.TrainingAddWorkoutActivity" />
+        <activity android:name=".activities.training.TrainingAddInformationActivity"/>
+        <activity
+            android:name=".activities.dialog.InfoDoneTrainingActivity"
+            android:theme="@style/TransparentTheme" />
+        <activity
+            android:name=".activities.dialog.InfoDoneWorkoutActivity"
+            android:theme="@style/TransparentTheme" />
+        <activity
+            android:name=".activities.dialog.InfoTrainingWorkoutActivity"
+            android:theme="@style/TransparentTheme" />
+        <activity android:name=".activities.DetailsDoneWorkoutActivity" />
+        <activity
+            android:name=".activities.dialog.WorkoutHelpActivity"
+            android:theme="@style/TransparentTheme" />
+        <activity
+            android:name=".activities.dialog.UserWeightDetailsActivity"
+            android:theme="@style/TransparentTheme" />
+        <activity
+            android:name=".activities.AddPracticeActivity"
+            android:theme="@style/RedBaseWhiteActivityTheme" />
+        <activity
+            android:name=".activities.AddEquipmentActivity"
+            android:theme="@style/TurquoiseBaseWhiteActivityTheme" />
+        <activity
+            android:name=".activities.AddUserWeightActivity"
+            android:theme="@style/BlueBaseWhiteActivityTheme" />
+        <activity
+            android:name=".activities.CreateNewWorkoutActivity"
+            android:theme="@style/WhiteBaseWhiteActivityTheme" />
+        <activity android:name=".activities.error.ServerIsDownActivity" />
+        <activity
+            android:name=".activities.loading.WaitForServerResponseActivity"
+            android:theme="@style/TransparentTheme" />
+        <activity
+            android:name=".activities.loading.WaitForInternetActivity"
+            android:theme="@style/TransparentTheme" />
+        <activity android:name=".activities.error.ErrorActivity" />
+        <activity
+            android:name=".activities.MainActivity"
+            android:theme="@style/BlueBaseWhiteActivityTheme" />
+        <activity android:name=".activities.registration.EmailRegisterActivity" />
+        <activity android:name=".activities.registration.LoginActivity" />
+        <activity
+            android:name=".activities.SplashScreenActivity"
+            android:windowSoftInputMode="adjustPan|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

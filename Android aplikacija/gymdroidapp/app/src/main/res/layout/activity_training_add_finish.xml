@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/masterLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.training.TrainingAddWorkoutActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin"
+                android:text="@string/training"
+                style="@style/OrdinaryTitleTextViewStyle" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/OrdinaryTextViewStyle"
+                android:text="@string/here_you_can_see_all_details_about_training_before_saving_it_also_you_can_also_add_more_workouts_by_clicking_on_button_add_workout"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/training_name"
+                style="@style/OrdinaryTitleSmallerTextViewStyle" />
+
+            <TextView
+                android:id="@+id/trainingNameTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/OrdinaryTextViewStyle" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin"
+                android:text="@string/training_description"
+                style="@style/OrdinaryTitleSmallerTextViewStyle" />
+
+            <TextView
+                android:id="@+id/trainingDescriptionTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/OrdinaryTextViewStyle" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin"
+                android:text="@string/training_intensity_level"
+                style="@style/OrdinaryTitleSmallerTextViewStyle" />
+
+            <TextView
+                android:id="@+id/trainingIntensityLevelTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/OrdinaryTextViewStyle"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin"
+                android:text="@string/workouts"
+                style="@style/OrdinaryTitleSmallerTextViewStyle" />
+
+            <TextView
+                android:id="@+id/listWorkoutTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/OrdinaryTextViewStyle"
+                />
+
+            <Button
+                android:id="@+id/addWorkoutButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:layout_marginStart="@dimen/margin_medium"
+                android:layout_marginEnd="@dimen/margin_medium"
+                android:text="@string/add_workout"
+                style="@style/PurpleButtonStyle"/>
+
+            <Button
+                android:id="@+id/saveButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_medium"
+                android:text="@string/save"
+                style="@style/PurpleButtonStyle"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

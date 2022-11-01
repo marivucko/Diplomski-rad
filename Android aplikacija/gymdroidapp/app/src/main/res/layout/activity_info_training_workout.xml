@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/masterLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_background_transparent"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:id="@+id/dialogLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        style="@style/DialogBackgroundStyle">
+
+        <TextView
+            android:id="@+id/trainingWorkoutName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            style="@style/CardTitleStyle"
+            android:text="@string/training_description"
+            android:layout_marginBottom="@dimen/margin_large"/>
+
+        <me.biubiubiu.justifytext.library.JustifyTextView
+            android:id="@+id/trainingWorkoutDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/CardTextStyle"
+            android:text="Training description\n"
+            android:layout_marginBottom="@dimen/margin"
+         />
+
+        <Button
+            android:id="@+id/closeButton"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/close"
+            style="@style/CardButtonStyle"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

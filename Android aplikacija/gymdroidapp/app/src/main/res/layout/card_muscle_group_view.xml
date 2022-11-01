@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/CardBackgroundStyle">
+
+    <TextView
+        android:id="@+id/workoutNameTextView"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/workout_title"
+        style="@style/CardTitleStyle"/>
+
+    <TextView
+        android:id="@+id/numberOfWorkoutsTextView"
+        android:layout_below="@id/workoutNameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin"
+        android:text="@string/number_of_workouts"
+        style="@style/CardHighLightTextStyle"/>
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/start"
+        style="@style/CardButtonStyle"/>
+
+</RelativeLayout>

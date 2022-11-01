@@ -1,0 +1,285 @@
+<resources>
+
+      ////////////////////////////////////////////////////////////////
+     ///////////// S H A R E D   P R E F E R E N C E S //////////////
+    ////////////////////////////////////////////////////////////////
+
+    <string name="shared_userId">shared_user_id</string>
+    <string name="shared_userEmail">shared_user_email</string>
+    <string name="shared_firebaseId">shared_firebase_id</string>
+    <string name="shared_registrationType">shared_registration_type</string>
+    <string name="shared_registerDate">shared_registerDate</string>
+    <string name="shared_lastWorkoutUpdate">shared_lastWorkoutUpdate</string>
+    <string name="shared_lastEquipmentUpdate">shared_lastEquipmentUpdate</string>
+    <string name="shared_lastWeightUpdate">shared_lastWeightUpdate</string>
+
+    /////////////////////////////////////////////////////////////////
+    /////////// R E G I S T R A T I O N   E R R O R S //////////////
+    ///////////////////////////////////////////////////////////////
+
+    <string name="registration_errors_email_is_empty">Email is empty</string>
+    <string name="registration_errors_wrong_email_format">Wrong email format</string>
+    <string name="registration_errors_password_is_empty">Password is empty</string>
+    <string name="registration_errors_repeated_password_is_empty">Password is not repeated</string>
+    <string name="registration_errors_repeated_password_incorrect">Password is not repeated correctly</string>
+
+    ///////////////////////////////////////////////////////////
+    /////////// F I L L   D A T A   E R R O R S //////////////
+    /////////////////////////////////////////////////////////
+
+    <string name="fill_data_errors_weight_cant_be_empty">Weight is empty</string>
+    <string name="fill_data_errors_count_cant_be_empty">Count is empty</string>
+    <string name="fill_data_errors_not_valid_value">Not valid value</string>
+    <string name="fill_data_errors_workout_must_have_name">Workout must have a name</string>
+    <string name="fill_data_errors_workout_must_have_description">Workout must have a description</string>
+    <string name="fill_data_errors_training_name_is_required">Training must have name</string>
+    <string name="fill_data_errors_training_description_is_required">Training must have description</string>
+    <string name="fill_data_errors_pause_between_workouts_is_required">Pause between workouts is required</string>
+    <string name="fill_data_errors_pause_between_sets_is_required">Pause between sets is required</string>
+    <string name="fill_data_errors_pause_all_sets_with_data">Please fill all sets with data</string>
+    <string name="fill_data_errors_pause_all_times_must_bew_longer">All times must bew longer then 0 seconds</string>
+
+    ///////////////////////////////////////////////
+    /////////// T A B L E   I N F O //////////////
+    /////////////////////////////////////////////
+
+    <string name="table_info_reps">Reps - R</string>
+    <string name="table_info_reps_time">Reps - R, Time - T</string>
+    <string name="table_info_reps_weight">Reps - R, Weight - W(kg)</string>
+    <string name="table_info_reps_weight_time">Reps - R, Weight - W(kg), Time - T</string>
+
+    ///////////////////////////////////////////////////////////////
+    /////////// S N A C K   B A R   M E S S A G E S //////////////
+    /////////////////////////////////////////////////////////////
+
+    <string name="snack_bar_messages_something_went_wrong">Something went wrong</string>
+    <string name="snack_bar_messages_press_again_to_go_back_delete_data">Press again to go back. All inserted data for the training will be deleted</string>
+    <string name="snack_bar_messages_there_is_no_workout_for_this_muscle_group">There is no workout for this muscle group. Please choose other muscle group.</string>
+
+    /////////////////////////////////////////////////////////
+    /////////// S E R V E R   I S   E M P T Y //////////////
+    ///////////////////////////////////////////////////////
+
+    <string name="server_is_empty_no_muscle">There is no muscle in system yet</string>
+    <string name="server_is_empty_no_equipment_type">There is no equipment type in system yet</string>
+    <string name="server_is_empty_no_workout">There is no workout in system yet</string>
+    <string name="server_is_empty_no_workout_for_muscle_group">For this muscle group does not exist any workout.</string>
+    <string name="server_is_empty_no_record_for_this_workout">There is no record for this workout.</string>
+
+    //////////////////////////////////////////////////////////////////
+    ///////// S E R V E R   L O A D I N G   M E S S A G E S ////////
+    ////////////////////////////////////////////////////////////////
+
+    <string name="server_loading_messages_wait_for_server_response">Wait for server response</string>
+    <string name="server_loading_messages_connecting_to_server">Connecting to server…</string>
+    <string name="server_loading_messages_loading_data">Loading data…</string>
+    <string name="server_loading_messages_registration_in_progress">Register user…</string>
+    <string name="server_loading_messages_login_in_progress">Login in progress…</string>
+    <string name="server_loading_messages_adding_new_equipment">"Adding new equipment…"</string>
+    <string name="server_loading_messages_deleting_equipment">"Deleting equipment…"</string>
+    <string name="server_loading_messages_adding_new_user_weight">"Adding new user weight…"</string>
+    <string name="server_loading_messages_deleting_user_weight">"Deleting user weight…"</string>
+    <string name="server_loading_messages_adding_new_workout">"Creating new Workout…"</string>
+    <string name="server_loading_messages_deleting_workout">"Deleting Workout…"</string>
+    <string name="server_loading_messages_adding_new_training">"Adding new training…"</string>
+    <string name="server_loading_messages_deleting_training">"Deleting training…"</string>
+
+    //////////////////////////////////////////////////////////////////////
+    /////////// C A L E N D A R   S E R V I C E   E R R O R S ///////////
+    ////////////////////////////////////////////////////////////////////
+
+    <string name="calendar_service_errors_day_is_empty">Day is empty</string>
+    <string name="calendar_service_errors_month_is_empty">Month is empty</string>
+    <string name="calendar_service_errors_year_is_empty">Year is empty</string>
+    <string name="calendar_service_errors_day_range">Day must be between number 1 and 31</string>
+    <string name="calendar_service_errors_month_range">Month must be between number 1 and 12</string>
+    <string name="calendar_service_errors_year_range">Year must be after 1990</string>
+
+    ////////////////////////////////////////////////////////////////////////////////////////////////
+    /////////// F A S T E R   I N P U T   S E R V I C E   S N A C K B A R   E R R O R S ///////////
+    //////////////////////////////////////////////////////////////////////////////////////////////
+
+    <string name="faster_input_service_snack_bar_max_6_sets">You can create max 6 sets</string>
+    <string name="faster_input_service_snack_bar_least_one_set">One workout must have at least one set</string>
+    <string name="faster_input_service_snack_bar_all_sets_with_data">Please fill all sets with data</string>
+
+    /////////////////////////////////////////////////////////////
+    /////////// S E R V E R E R R O R M E S S A G E S //////////
+    ///////////////////////////////////////////////////////////
+
+    <string name="server_error_register_wrong_type">You tried to register with existing account with wrong registration option. Please try to login with another option.</string>
+    <string name="server_error_register_user_exist">You tried to register with existing account, please try login option.</string>
+    <string name="server_error_login_google_wrong_firebase_id">Wrong firebaseId is stored in server database.</string>
+    <string name="server_error">Server error.</string>
+    <string name="server_error_login_wrong_type">Please try to login with Google account with the same email address.</string>
+    <string name="server_error_login_user_not_exist">You tried to login with wrong email or password.</string>
+    <string name="server_error_login_wrong_password">You tried to login with wrong password.</string>
+    <string name="server_error_user_not_exist">You tried to login with a not existing account.</string>
+    <string name="server_error_user_banned">You tried to login with banned account.</string>
+
+    ///////////////////////////////////////////////////////////////////////////
+    /////////// S P I N N E R V A L U E S ////////////////////////////////////
+    /////////////////////////////////////////////////////////////////////////
+
+    <string name="target_primary">PRIMARY</string>
+    <string name="target_secondary">SECONDARY</string>
+    <string name="target_ternary">TERNARY</string>
+
+    //////////////////////////////////
+    ///////// S P I N N E R /////////
+    ////////////////////////////////
+
+    <string-array name="intensity_array">
+        <item>Beginner</item>
+        <item>Intermediate</item>
+        <item>Advanced</item>
+    </string-array>
+
+    /////////////////////////////////////////////////////////////////
+    //////////// T R A I N I N G I N T E N S I T Y ///////////////
+    ///////////////////////////////////////////////////////////////
+
+    <string name="training_intensity_level_beginner">Beginner</string>
+    <string name="training_intensity_level_intermediate">Intermediate</string>
+    <string name="training_intensity_level_advanced">Advanced</string>
+    <string name="training_intensity_level_error">Error</string>
+
+    ////////////////////////////////////////////////////////////////////////////
+    ////////////////////////////////////////////////////////////////////////////
+    ////////////////////////////////////////////////////////////////////////////
+
+    <string name="app_name">GymDroid</string>
+    <string name="hint_email">Enter email</string>
+    <string name="hint_password">Enter password</string>
+    <string name="repeat_password">Repeat password</string>
+    <string name="register">Register</string>
+    <string name="login_with_email">Login with email</string>
+    <string name="register_with_email">Register with email</string>
+    <string name="error">Error</string>
+    <string name="go_back">Go back</string>
+    <string name="server_update">Server update</string>
+    <string name="server_update_text">Our developers are working on some server update. Please try to enter the app again later.\n</string>
+    <string name="try_to_connect_again">Try to connect again</string>
+    <string name="logout">Logout</string>
+    <string name="muscle_card_title">Muscle</string>
+    <string name="new_workout_at_least_one_muscle">The workout must have at least one target muscle</string>
+    <string name="new_workout_activity_no_more_muscles">You have added all muscles to this workout</string>
+    <string name="future_time_weight">It is impossible to now your future weight.</string>
+    <string name="future_time_workout">It is possible to enter only done workout, not the one reserved for the future.</string>
+
+    <string name="date">Date</string>
+    <string name="custom_date">Custom Date</string>
+    <string name="hint_day">dd</string>
+    <string name="hint_month">mm</string>
+    <string name="hint_year">yyyy</string>
+    <string name="weight">Weight</string>
+    <string name="kg">kg</string>
+    <string name="save">Save</string>
+    <string name="note">Note</string>
+    <string name="today">Today</string>
+    <string name="yesterday">Yesterday</string>
+    <string name="year">Year</string>
+    <string name="month">Month</string>
+    <string name="day">Day</string>
+    <string name="workout_details">Workout details</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="choose_muscle">Choose Muscle</string>
+    <string name="choose_muscle_priority">Choose muscle priority</string>
+    <string name="add_new_muscle">Add new muscle</string>
+    <string name="remove_last_muscle">Remove last muscle</string>
+    <string name="equipment">Equipment</string>
+    <string name="choose_equipment_type">Choose equipment type</string>
+    <string name="details">Details</string>
+    <string name="count">Count</string>
+    <string name="reps">reps</string>
+    <string name="change_first_set">Change first set</string>
+    <string name="change_all_sets">Change all sets</string>
+    <string name="dumbbell">Dumbbell</string>
+    <string name="_0_0">0.0</string>
+    <string name="_0">0</string>
+    <string name="_kg"> kg</string>
+    <string name="select_time">Select Time</string>
+    <string name="number_of_workouts">Number of workouts : </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="choose_workout">Choose workout</string>
+    <string name="sets_all_same">Sets all same</string>
+    <string name="clear_all_sets">Clear all sets</string>
+    <string name="add_new_set">Add new set</string>
+    <string name="remove_last_set">Remove last set</string>
+    <string name="barbell_calculator">Weight calculator</string>
+    <string name="dumbbell_calculator">Dumbbell calculator</string>
+    <string name="workout_name">Workout name</string>
+    <string name="workout_description">Workout description</string>
+    <string name="does_this_workout_can_be_performed_with_additional_weight_like_dumbbells_or_barbells">Does this workout can be performed with additional weight, like dumbbells or barbells?\n</string>
+    <string name="does_this_workout_needs_time_intervals_to_be_performed">Does this workout needs time intervals to be performed?</string>
+    <string name="make_this_workout_public">Make this workout public?</string>
+    <string name="description">Description</string>
+    <string name="close">Close</string>
+    <string name="delete">Delete</string>
+    <string name="or">or</string>
+    <string name="training">Training</string>
+    <string name="here_you_can_see_all_details_about_training_before_saving_it_also_you_can_also_add_more_workouts_by_clicking_on_button_add_workout">Here you can see all the details about the training. Before saving it, you can add more workouts by clicking on the button Add workout.\n</string>
+    <string name="training_intensity_level">Training intensity level</string>
+    <string name="workouts">Workouts</string>
+    <string name="here_you_can_choose_ont_of_many_workouts_to_add_to_your_training">Here you can choose one of many workouts for muscles of the selected muscle group and add it to your training.\n</string>
+    <string name="here_you_can_choose_ont_of_muscle_groups">Here you can choose one of the muscle groups on which you want to focus on.\n</string>
+    <string name="add_workout">Add workout</string>
+    <string name="new_training">New Training</string>
+    <string name="congratulation_you_are_a_few_steps_from_creating_a_new_training_plan">Congratulation! You are a few steps from creating a new training plan.\n</string>
+    <string name="training_name">Training name</string>
+    <string name="please_insert_your_training_name_so_you_can_recognize_it_in_a_group_of_many_other">Please insert the name of your training, so you can recognize it in a group of many others.\n</string>
+    <string name="training_description">Training description</string>
+    <string name="please_insert_your_training_description_so_you_can_later_now_what_to_do_during_the_session">Please insert the description of your training, so you can later know what to do during the session.\n</string>
+    <string name="training_intense_level">Training intense level</string>
+    <string name="intensity_level_of_workout_show_to_other_users_if_this_workout_is_for_beginners_or_advanced_users">The intensity level of workout shows if this workout is for beginners or advanced users.\n</string>
+    <string name="select_training_intense_level">Select training intense level</string>
+    <string name="pause_between_workouts">Pause between workouts</string>
+    <string name="every_training_consists_of_a_few_workouts_and_after_each_the_pause_is_needed_by_selecting_this_time_you_will_create_timer_that_will_start_between_every_workout">Every training consists of a few workouts, and after each, the pause is needed. By selecting this time, you will create a timer that will start between workouts. The time must be greater than 0 seconds.\n</string>
+    <string name="next">Next</string>
+    <string name="every_training_plan_consist_of_one_or_more_workouts_here_you_can_fill_information_about_current_workout_after_that_you_can_add_one_more_workout_or_finish_with_creating_this_training_don_t_forget_the_order_you_add_workouts_that_is_the_order_in_witch_it_came_during_training_session">Every training plan consists of one or more workouts. Here you can fill information about the current workout, after that, you can add more workouts or finish with creating this training.\n</string>
+    <string name="select_workout">Select workout</string>
+    <string name="select_muscle_group">Select muscle group</string>
+    <string name="hare_you_can_add_workout_information_about_every_set_in_the_workout_that_will_be_requested_from_you_during_training_session">Here you can add workout information about each set in the workout.\n</string>
+    <string name="pause_between_sets">Pause between sets</string>
+    <string name="every_workout_consists_of_a_few_sets_and_after_each_the_pause_is_needed_by_selecting_this_time_you_will_create_timer_that_will_start_between_every_set">Every workout consists of a few sets, and after each, the pause is needed. By selecting this time, you will create a timer that will start between every two sets.\n</string>
+    <string name="weight_details">Weight details</string>
+    <string name="date_dot_dot">Date: </string>
+    <string name="weight_dot_dot">Weight: </string>
+    <string name="notes_dot_dot">Notes: </string>
+    <string name="table_details">Table details</string>
+    <string name="workout_type">Workout type</string>
+    <string name="type_of_workout_can_be_public_and_private_if_workout_is_public_that_means_anyone_can_see_it_however_if_workout_is_private_that_means_you_are_creator_of_workout_and_you_are_only_person_that_can_see_it">The type of workout can be public or private. If the workout is public, that means anyone can see it. However, if the workout is private, that means you are the creator of workout, and you are the only person who can see it.\n</string>
+    <string name="signalize_that_workout_is_private">Signalize that workout is private. You can delete the private workout by pressing this icon.\n</string>
+    <string name="signalize_that_workout_is_public">Signalize that workout is public.</string>
+    <string name="workout_count">Workout count</string>
+    <string name="workout_count_is_number_of_times_you_have_performed_this_workout">Workout count is the number of times you have performed this workout.\n</string>
+    <string name="workout_title">Workout Title</string>
+    <string name="start">Start</string>
+    <string name="create_new_training">Create new training</string>
+    <string name="create">Create</string>
+    <string name="name">Name</string>
+    <string name="add_equipment">Add equipment</string>
+    <string name="muscle_groups">Muscle groups</string>
+    <string name="from_here_you_can_choose_directly_what_muscle_groups_you_want_to_train_and_workouts_for_those_will_be_automatically_selected">Here you can choose directly which muscle groups you want to train, and workouts for those will be automatically selected.</string>
+    <string name="you_want_some_training_plan_excellent_here_you_can_create_your_training_program_and_than_track_your_further_progress">Do you want some training plans? Excellent! Here you can create your training program and then track your further progress.</string>
+    <string name="congratulation">Congratulation</string>
+    <string name="you_just_have_finished_training_session_press_button_to_save_data">You just have finished training session, press button to save data.</string>
+    <string name="pause_between_nsets">Pause between sets</string>
+    <string name="long_press_the_screen_to_skip_the_countdown">Long press the screen to skip the countdown</string>
+    <string name="pause_between_nworkouts">Pause between workouts</string>
+    <string name="training_nstarts_in">Training starts in</string>
+    <string name="done">Done</string>
+    <string name="weight_history">Weight history</string>
+    <string name="add_weight">Add weight</string>
+    <string name="your_workouts">Your workouts</string>
+    <string name="type">Type</string>
+    <string name="create_new_workout">Create new workout</string>
+    <string name="sec_dot">sec.</string>
+    <string name="r_dot_dot">R :</string>
+    <string name="t_dot_dot">T :</string>
+    <string name="w_dot_dot">W :</string>
+
+</resources>

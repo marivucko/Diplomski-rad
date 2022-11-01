@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/masterLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.CreateNewWorkoutActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarThumbVertical="@drawable/scrollbar_purple">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/ColoredLinearLayout"
+                android:background="@drawable/card_purple">
+
+                <TextView
+                    android:text="@string/workout_details"
+                    style="@style/TextViewTitleWhiteStyle"
+                    />
+
+                <EditText
+                    android:id="@+id/workoutNameEditText"
+                    android:hint="@string/workout_name"
+                    style="@style/EditTextViewColoredCardStyle"
+                    android:gravity="start"/>
+
+                <EditText
+                    android:id="@+id/workoutDescriptionEditText"
+                    android:hint="@string/workout_description"
+                    style="@style/EditTextViewColoredCardStyle"
+                    android:gravity="start"/>
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/margin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top">
+
+                    <Switch
+                        android:id="@+id/weightSwitch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        style="@style/SwitchButtonStyle"/>
+
+<!--                    <TextView-->
+<!--                        android:text="@string/does_this_workout_can_be_performed_with_additional_weight_like_dumbbells_or_barbells"-->
+<!--                        style="@style/TextViewColoredCardStyle"-->
+<!--                        android:gravity="start"-->
+<!--                        android:layout_marginBottom="@dimen/margin_small"-->
+<!--                        />-->
+
+                    <me.biubiubiu.justifytext.library.JustifyTextView
+                        android:text="@string/does_this_workout_can_be_performed_with_additional_weight_like_dumbbells_or_barbells"
+                        android:textColor="@color/colorWhite"
+                        android:gravity="start"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/muscleDetailsLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"/>
+
+            <Button
+                android:id="@+id/removeMuscleButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin"
+                android:layout_marginEnd="@dimen/margin"
+                android:text="@string/remove_last_muscle"
+                style="@style/PurpleButtonStyle"/>
+
+            <Button
+                android:id="@+id/addMuscleButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin"
+                android:layout_marginStart="@dimen/margin"
+                android:layout_marginEnd="@dimen/margin"
+                android:text="@string/add_new_muscle"
+                style="@style/PurpleButtonStyle"/>
+
+            <Button
+                android:id="@+id/saveButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin"
+                android:text="@string/save"
+                style="@style/PurpleButtonStyle"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

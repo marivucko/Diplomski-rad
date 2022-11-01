@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/masterLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_background_transparent"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:id="@+id/dialogLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        style="@style/DialogBackgroundStyle">
+
+        <TextView
+            android:id="@+id/training_description"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            style="@style/DialogHighLightTextView"
+            android:text="Exercises included in training"
+            android:layout_marginBottom="@dimen/margin_small"
+            android:layout_marginTop="@dimen/margin"/>
+
+        <TextView
+            android:id="@+id/trainingDescription"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            style="@style/CardTextStyle"
+            android:text="@string/training_description"
+            android:layout_marginBottom="@dimen/margin"/>
+
+
+        <TextView
+            android:id="@+id/noteTextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="You have not performed this training yet."
+            style="@style/CardHighLightTextStyle"
+            android:layout_marginTop="@dimen/margin"
+            android:layout_marginBottom="@dimen/margin_small"
+            android:textSize="@dimen/margin_medium"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/doneTrainingLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            </LinearLayout>
+
+        </ScrollView>
+
+        <Button
+            android:id="@+id/closeButton"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/close"
+            style="@style/CardButtonStyle"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

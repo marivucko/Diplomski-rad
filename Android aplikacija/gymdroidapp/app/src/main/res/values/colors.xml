@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#ffffff</color>
+    <color name="colorAccent">#24CBAF</color>
+
+    <color name="colorPurpleGradient">#7F644C9A</color>
+    <color name="colorGreenGradient">#7F46A366</color>
+
+    <color name="colorYellowGradient">#7FE1CE62</color>
+    <color name="colorYellowError">#E1CE62</color>
+    <color name="colorRedGradient">#7FDF7360</color>
+    <color name="colorRedError">#DF7360</color>
+
+    <color name="colorGreenLight">#8FCD6A</color>
+    <color name="colorGreen">#59AC76</color>
+    <color name="colorTurquoise">#4C8790</color>
+    <color name="colorBlue">#58729C</color>
+    <color name="colorPurple">#80579E</color>
+    <color name="colorRed">#D76466</color>
+    <color name="colorOrange">#D98D64</color>
+
+    <color name="colorGreenDark">#519C6B</color>
+    <color name="colorTurquoiseDark">#457B83</color>
+    <color name="colorBlueDark">#50688E</color>
+    <color name="colorPurpleDark">#744F90</color>
+    <color name="colorRedDark">#C35B5D</color>
+    <color name="colorOrangeDark">#C5805B</color>
+
+    <color name="colorBlueBackground">#F0F2F6</color>
+    <color name="colorPurpleBackground">#F3F0F6</color>
+
+    <color name="colorWhiteReal">#FFFFFF</color>
+    <color name="colorWhite">#FCFCFC</color>
+    <color name="colorBlack">#0C0C0C</color>
+    <color name="colorWhiteBackground">#7FFFFFFF</color>
+    <color name="colorWhiteBackgroundMain">#EFFFFFFF</color>
+    <color name="colorWhiteHint">#7FFFFFFF</color>
+    <color name="dialogBackgroundColor">#CF000000</color>
+
+    <color name="colorTextHintEditText">#b3b3b3</color>
+    <color name="colorTextEditText">#333333</color>
+
+    /// dialog colors
+    <color name="colorDialogTitle">#000000</color>
+    <color name="colorDialogText">#0E0E0E</color>
+    <color name="colorDialogHighLight">#0E0E0E</color>
+
+    /// table colors
+    <color name="colorTableTitle">#000000</color>
+    <color name="colorTableHeader">#0A0A0A</color>
+    <color name="colorTableItem">#0E0E0E</color>
+
+    /// card colors
+    <color name="colorCardTitle">#000000</color>
+    <color name="colorCardHighLight">#1E1E1E</color>
+    <color name="colorCardText">#5A5A5A</color>
+
+    /// ordinary colors
+    <color name="colorOrdinaryTitle">#000000</color>
+    <color name="colorOrdinaryText">#5A5A5A</color>
+
+</resources>

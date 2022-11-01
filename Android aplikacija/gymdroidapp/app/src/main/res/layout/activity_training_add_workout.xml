@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/masterLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.training.TrainingAddWorkoutActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin"
+                android:text="@string/add_workout"
+                style="@style/OrdinaryTitleTextViewStyle" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/OrdinaryTextViewStyle"
+                android:text="@string/every_training_plan_consist_of_one_or_more_workouts_here_you_can_fill_information_about_current_workout_after_that_you_can_add_one_more_workout_or_finish_with_creating_this_training_don_t_forget_the_order_you_add_workouts_that_is_the_order_in_witch_it_came_during_training_session"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/select_muscle_group"
+                style="@style/OrdinaryTitleSmallerTextViewStyle" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/OrdinaryTextViewStyle"
+                android:text="@string/here_you_can_choose_ont_of_muscle_groups"
+                />
+
+            <LinearLayout
+                android:background="@drawable/card_purple"
+                style="@style/ColoredLinearLayout">
+
+                <TextView
+                    android:text="@string/select_muscle_group"
+                    style="@style/TextViewTitleWhiteStyle"/>
+
+                <Spinner
+                    android:id="@+id/muscleGroupSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorWhite" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin"
+                android:text="@string/select_workout"
+                style="@style/OrdinaryTitleSmallerTextViewStyle" />
+
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/OrdinaryTextViewStyle"
+                android:text="@string/here_you_can_choose_ont_of_many_workouts_to_add_to_your_training"
+                />
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/margin"
+                android:background="@drawable/card_purple"
+                style="@style/ColoredLinearLayout">
+
+                <TextView
+                    android:text="@string/select_workout"
+                    style="@style/TextViewTitleWhiteStyle"/>
+
+                <Spinner
+                    android:id="@+id/workoutSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorWhite"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginTop="@dimen/margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/workout_details"
+                style="@style/OrdinaryTitleSmallerTextViewStyle" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/OrdinaryTextViewStyle"
+                android:text="@string/hare_you_can_add_workout_information_about_every_set_in_the_workout_that_will_be_requested_from_you_during_training_session"
+                />
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/margin_small"
+                style="@style/WhiteLinearLayoutStyle">
+
+                <TextView
+                    android:text="@string/workout_details"
+                    android:textColor="@color/colorPurple"
+                    style="@style/TextViewTitleWhiteStyle"/>
+
+                <View
+                    android:background="@color/colorPurple"
+                    style="@style/LineStyle"/>
+
+                <LinearLayout
+                    android:id="@+id/setLinearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:weightSum="2"
+                    android:layout_marginTop="@dimen/margin_small"/>
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/margin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2">
+
+                        <Button
+                            android:id="@+id/setSameSetsButton"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="@string/sets_all_same"
+                            style="@style/PurpleButtonStyle"/>
+
+                        <Button
+                            android:id="@+id/clearSetsButton"
+                            android:layout_marginStart="@dimen/margin_small"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="@string/clear_all_sets"
+                            style="@style/PurpleButtonStyle"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/margin_small"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2">
+
+                        <Button
+                            android:id="@+id/addNewSetButton"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="@string/add_new_set"
+                            style="@style/PurpleButtonStyle"/>
+
+                        <Button
+                            android:id="@+id/removeLastSetButton"
+                            android:layout_marginStart="@dimen/margin_small"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="@string/remove_last_set"
+                            style="@style/PurpleButtonStyle"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/barbellCardLinearLayout"
+                style="@style/WhiteLinearLayoutStyle">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="@string/barbell_calculator"
+                        android:textColor="@color/colorPurple"
+                        android:layout_alignParentStart="true"
+                        style="@style/TextViewTitleWhiteStyle"/>
+
+                    <TextView
+                        android:id="@+id/totalBarbellTextView"
+                        android:text="@string/_0_0"
+                        android:textColor="@color/colorPurple"
+                        android:layout_width="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        style="@style/TextViewTitleWhiteStyle"/>
+
+                </RelativeLayout>
+
+                <View
+                    android:background="@drawable/button_purple_normal"
+                    style="@style/LineStyle"/>
+
+                <LinearLayout
+                    android:id="@+id/barbellLinearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:weightSum="2"
+                    android:layout_marginTop="@dimen/margin_small"/>
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/margin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2">
+
+                    <Button
+                        android:id="@+id/setBarbellToFirstButton"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="@string/change_first_set"
+                        style="@style/PurpleButtonStyle" />
+
+                    <Button
+                        android:layout_marginStart="@dimen/margin_small"
+                        android:id="@+id/setBarbellSameWeightButton"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="@string/change_all_sets"
+                        style="@style/PurpleButtonStyle"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginTop="@dimen/margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/pause_between_sets"
+                style="@style/OrdinaryTitleSmallerTextViewStyle" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_marginTop="@dimen/margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/OrdinaryTextViewStyle"
+                android:text="@string/every_workout_consists_of_a_few_sets_and_after_each_the_pause_is_needed_by_selecting_this_time_you_will_create_timer_that_will_start_between_every_set"
+                />
+
+            <EditText
+                android:id="@+id/timerEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                style="@style/OrdinaryTitleSmallerTextViewStyle"/>
+
+            <Button
+                android:id="@+id/saveButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/save"
+                android:layout_marginStart="@dimen/margin_medium"
+                android:layout_marginEnd="@dimen/margin_medium"
+                style="@style/PurpleButtonStyle"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

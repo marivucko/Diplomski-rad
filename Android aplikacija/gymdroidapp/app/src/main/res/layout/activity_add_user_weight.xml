@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/masterLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.AddUserWeightActivity"
+    android:background="@color/colorWhite">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarThumbVertical="@drawable/scrollbar_blue">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:background="@drawable/card_blue"
+                style="@style/ColoredLinearLayout">
+
+                <TextView
+                    android:text="@string/date"
+                    style="@style/TextViewTitleWhiteStyle"/>
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/margin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:text="@string/year"
+                        style="@style/EditTextViewNumberSeparatorStyle"/>
+
+                    <TextView
+                        android:text="@string/month"
+                        style="@style/EditTextViewNumberSeparatorStyle"/>
+
+                    <TextView
+                        android:text="@string/day"
+                        style="@style/EditTextViewNumberSeparatorStyle"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <EditText
+                        android:id="@+id/yearEditText"
+                        android:hint="@string/hint_year"
+                        android:maxLength="4"
+                        style="@style/EditTextViewNumberSeparatorStyle"/>
+
+                    <EditText
+                        android:id="@+id/monthEditText"
+                        android:hint="@string/hint_month"
+                        android:maxLength="2"
+                        style="@style/EditTextViewNumberSeparatorStyle"/>
+
+                    <EditText
+                        android:id="@+id/dayEditText"
+                        android:hint="@string/hint_day"
+                        android:maxLength="2"
+                        style="@style/EditTextViewNumberSeparatorStyle"/>
+
+                </LinearLayout>
+
+                <RadioGroup
+                    android:id="@+id/radioGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation='horizontal'
+                    android:gravity="center">
+
+                    <RadioButton
+                        android:id="@+id/todayDateRadioButton"
+                        android:checked="true"
+                        android:text="@string/today"
+                        style="@style/RadioButtonStyle"/>
+
+                    <RadioButton
+                        android:id="@+id/yesterdayDateRadioButton"
+                        android:text="@string/yesterday"
+                        android:layout_marginStart="@dimen/margin"
+                        style="@style/RadioButtonStyle"/>
+
+                    <RadioButton
+                        android:id="@+id/customDateRadioButton"
+                        android:text="@string/custom_date"
+                        android:layout_marginStart="@dimen/margin"
+                        style="@style/RadioButtonStyle"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/WhiteLinearLayoutStyle">
+
+                <TextView
+                    android:text="@string/weight"
+                    android:textColor="@color/colorBlue"
+                    style="@style/TextViewTitleWhiteStyle"/>
+
+                <View
+                    android:background="@drawable/button_blue_normal"
+                    style="@style/LineStyle"/>
+
+                <LinearLayout
+                    android:id="@+id/linerLayoutAbs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:layout_marginTop="@dimen/margin_small">
+
+                    <TextView
+                        android:text="@string/weight"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.4"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <EditText
+                        android:id="@+id/weightEditText"
+                        android:layout_width="0dp"
+                        android:layout_weight="1.4"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/margin"
+                        android:inputType="numberDecimal"
+                        android:gravity="center"
+                        />
+
+                    <TextView
+                        android:text="@string/kg"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.2"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin"
+                        android:gravity="start"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:text="@string/note"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.4"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <EditText
+                        android:id="@+id/noteEditText"
+                        android:layout_width="0dp"
+                        android:layout_weight="1.6"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/margin"
+                        android:gravity="start"
+                        android:inputType="textCapSentences"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/saveButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin"
+                style="@style/BlueButtonStyle"
+                android:text="@string/save"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

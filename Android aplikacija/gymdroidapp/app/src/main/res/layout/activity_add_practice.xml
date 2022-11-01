@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/masterLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.AddPracticeActivity"
+    android:background="@color/colorWhite">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarThumbVertical="@drawable/scrollbar_red">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:background="@drawable/card_red"
+                style="@style/ColoredLinearLayout">
+
+                <TextView
+                    android:text="@string/choose_workout"
+                    style="@style/TextViewTitleWhiteStyle"/>
+
+                <Spinner
+                    android:id="@+id/workoutSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorWhite" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@drawable/card_red"
+                style="@style/ColoredLinearLayout">
+
+                <TextView
+                    android:text="@string/date"
+                    style="@style/TextViewTitleWhiteStyle"/>
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/margin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:text="@string/year"
+                        style="@style/EditTextViewNumberSeparatorStyle"/>
+
+                    <TextView
+                        android:text="@string/month"
+                        style="@style/EditTextViewNumberSeparatorStyle"/>
+
+                    <TextView
+                        android:text="@string/day"
+                        style="@style/EditTextViewNumberSeparatorStyle"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <EditText
+                        android:id="@+id/yearEditText"
+                        android:hint="@string/hint_year"
+                        android:maxLength="4"
+                        style="@style/EditTextViewNumberSeparatorStyle"/>
+
+                    <EditText
+                        android:id="@+id/monthEditText"
+                        android:hint="@string/hint_month"
+                        android:maxLength="2"
+                        style="@style/EditTextViewNumberSeparatorStyle"/>
+
+                    <EditText
+                        android:id="@+id/dayEditText"
+                        android:hint="@string/hint_day"
+                        android:maxLength="2"
+                        style="@style/EditTextViewNumberSeparatorStyle"/>
+
+                </LinearLayout>
+
+                <RadioGroup
+                    android:id="@+id/radioGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation='horizontal'
+                    android:gravity="center">
+
+                    <RadioButton
+                        android:id="@+id/todayDateRadioButton"
+                        android:checked="true"
+                        android:text="@string/today"
+                        style="@style/RadioButtonStyle"/>
+
+                    <RadioButton
+                        android:id="@+id/yesterdayDateRadioButton"
+                        android:text="@string/yesterday"
+                        android:layout_marginStart="@dimen/margin"
+                        style="@style/RadioButtonStyle"/>
+
+                    <RadioButton
+                        android:id="@+id/customDateRadioButton"
+                        android:text="@string/custom_date"
+                        android:layout_marginStart="@dimen/margin"
+                        style="@style/RadioButtonStyle"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/WhiteLinearLayoutStyle">
+
+                <TextView
+                    android:text="@string/workout_details"
+                    android:textColor="@color/colorRed"
+                    style="@style/TextViewTitleWhiteStyle"/>
+
+                <View
+                    android:background="@color/colorRed"
+                    style="@style/LineStyle"/>
+
+                <LinearLayout
+                    android:id="@+id/setLinearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:weightSum="2"
+                    android:layout_marginTop="@dimen/margin_small"/>
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/margin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2">
+
+                        <Button
+                            android:id="@+id/setSameSetsButton"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="@string/sets_all_same"
+                            style="@style/RedButtonStyle"/>
+
+                        <Button
+                            android:id="@+id/clearSetsButton"
+                            android:layout_marginStart="@dimen/margin_small"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="@string/clear_all_sets"
+                            style="@style/RedButtonStyle"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/margin_small"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2">
+
+                        <Button
+                            android:id="@+id/addNewSetButton"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="@string/add_new_set"
+                            style="@style/RedButtonStyle"/>
+
+                        <Button
+                            android:id="@+id/removeLastSetButton"
+                            android:layout_marginStart="@dimen/margin_small"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="@string/remove_last_set"
+                            style="@style/RedButtonStyle"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/barbellCardLinearLayout"
+                style="@style/WhiteLinearLayoutStyle">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="@string/barbell_calculator"
+                        android:textColor="@color/colorRed"
+                        android:layout_alignParentStart="true"
+                        style="@style/TextViewTitleWhiteStyle"/>
+
+                    <TextView
+                        android:id="@+id/totalBarbellTextView"
+                        android:text="@string/_0_0"
+                        android:textColor="@color/colorOrange"
+                        android:layout_width="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        style="@style/TextViewTitleWhiteStyle"/>
+
+                </RelativeLayout>
+
+                <View
+                    android:background="@drawable/button_red_normal"
+                    style="@style/LineStyle"/>
+
+                <LinearLayout
+                    android:id="@+id/barbellLinearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:weightSum="2"
+                    android:layout_marginTop="@dimen/margin_small"/>
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/margin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2">
+
+                    <Button
+                        android:id="@+id/setBarbellToFirstButton"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="@string/change_first_set"
+                        style="@style/RedButtonStyle" />
+
+                    <Button
+                        android:layout_marginStart="@dimen/margin_small"
+                        android:id="@+id/setBarbellSameWeightButton"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="@string/change_all_sets"
+                        style="@style/RedButtonStyle"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/dumbbellCardLinearLayout"
+                style="@style/WhiteLinearLayoutStyle">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="@string/dumbbell_calculator"
+                        android:textColor="@color/colorRed"
+                        android:layout_alignParentStart="true"
+                        style="@style/TextViewTitleWhiteStyle"/>
+
+                    <TextView
+                        android:id="@+id/totalDumbbellText"
+                        android:text="@string/_0_0"
+                        android:textColor="@color/colorOrange"
+                        android:layout_width="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        style="@style/TextViewTitleWhiteStyle"/>
+
+                </RelativeLayout>
+
+                <View
+                    android:background="@drawable/button_red_normal"
+                    style="@style/LineStyle"/>
+
+                <LinearLayout
+                    android:id="@+id/dumbbellLinearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:weightSum="2"
+                    android:layout_marginTop="@dimen/margin_small"/>
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/margin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2">
+
+                    <Button
+                        android:id="@+id/setDumbbellToFirstButton"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="@string/change_first_set"
+                        style="@style/RedButtonStyle" />
+
+                    <Button
+                        android:layout_marginStart="@dimen/margin_small"
+                        android:id="@+id/setDumbbellSameWeightButton"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="@string/change_all_sets"
+                        style="@style/RedButtonStyle"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/saveButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin"
+                style="@style/RedButtonStyle"
+                android:text="@string/save"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

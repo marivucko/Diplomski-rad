@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:left="2dp" android:top="2dp" android:right="2dp" android:bottom="3dp">
+        <shape>
+            <gradient
+                android:startColor="@color/colorTurquoiseDark"
+                android:endColor="@color/colorBlueDark"
+                />
+            <corners
+                android:topLeftRadius="@dimen/corner_radius_small"
+                android:topRightRadius="@dimen/corner_radius_small"
+                android:bottomRightRadius="@dimen/corner_radius_small"
+                android:bottomLeftRadius="@dimen/corner_radius_small"
+                />
+        </shape>
+    </item>
+
+    <item android:left="3dp" android:top="2dp" android:right="3dp" android:bottom="5dp">
+        <shape>
+            <gradient
+                android:startColor="@color/colorTurquoise"
+                android:endColor="@color/colorBlue"
+                />
+            <corners
+                android:topLeftRadius="@dimen/corner_radius_small"
+                android:topRightRadius="@dimen/corner_radius_small"
+                android:bottomRightRadius="@dimen/corner_radius_small"
+                android:bottomLeftRadius="@dimen/corner_radius_small"
+                />
+        </shape>
+    </item>
+
+</layer-list>

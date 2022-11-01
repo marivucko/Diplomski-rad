@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/masterLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_background_transparent"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:id="@+id/dialogLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        style="@style/DialogBackgroundStyle">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/table_details"
+                    style="@style/DialogTitleTextView"/>
+
+                <TextView
+                    android:layout_marginTop="@dimen/margin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/workout_type"
+                    style="@style/DialogHighLightTextView"/>
+
+                <me.biubiubiu.justifytext.library.JustifyTextView
+                    android:layout_marginTop="@dimen/margin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/type_of_workout_can_be_public_and_private_if_workout_is_public_that_means_anyone_can_see_it_however_if_workout_is_private_that_means_you_are_creator_of_workout_and_you_are_only_person_that_can_see_it"
+                    style="@style/DialogTextView"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_status_private"/>
+
+                    <me.biubiubiu.justifytext.library.JustifyTextView
+                        android:layout_marginStart="@dimen/margin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/signalize_that_workout_is_private"
+                        style="@style/DialogTextView"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_status_public"/>
+
+                    <TextView
+                        android:layout_marginStart="@dimen/margin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/signalize_that_workout_is_public"
+                        style="@style/DialogTextView"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/workout_count"
+                    style="@style/DialogHighLightTextView"/>
+
+                <me.biubiubiu.justifytext.library.JustifyTextView
+                    android:layout_marginTop="@dimen/margin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/workout_count_is_number_of_times_you_have_performed_this_workout"
+                    style="@style/DialogTextView"/>
+
+                <Button
+                    android:id="@+id/closeButton"
+                    android:layout_marginTop="@dimen/margin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/close"
+                    style="@style/CardButtonStyle"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</RelativeLayout>

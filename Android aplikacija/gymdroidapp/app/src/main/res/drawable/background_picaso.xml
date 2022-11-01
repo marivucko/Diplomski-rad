@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:left="-60dp"
+        android:top="-40dp"
+        android:right="50dp"
+        android:bottom="10dp">
+        <rotate
+            android:fromDegrees="60"
+            >
+            <shape android:shape="rectangle">
+                <solid android:color="#ffffff" />
+            </shape>
+        </rotate>
+    </item>
+
+    <!--<item-->
+        <!--android:left="80dp"-->
+        <!--android:top="100dp"-->
+        <!--android:right="-80dp"-->
+        <!--android:bottom="20dp">-->
+        <!--<rotate-->
+            <!--android:fromDegrees="120"-->
+            <!--&gt;-->
+            <!--<shape android:shape="rectangle">-->
+                <!--<solid android:color="#aaeeee" />-->
+            <!--</shape>-->
+        <!--</rotate>-->
+    <!--</item>-->
+
+    <item
+        android:left="40dp"
+        android:top="220dp"
+        android:right="-40dp"
+        android:bottom="20dp">
+        <rotate
+            android:fromDegrees="30"
+            >
+            <shape android:shape="rectangle">
+                <solid android:color="#ffffff" />
+            </shape>
+        </rotate>
+    </item>
+
+    <item
+        android:left="-60dp"
+        android:top="-20dp"
+        android:right="50dp"
+        android:bottom="10dp">
+        <rotate
+            android:fromDegrees="30"
+            >
+            <shape android:shape="rectangle">
+                <solid android:color="#ffffff" />
+            </shape>
+        </rotate>
+    </item>
+
+</layer-list>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    style="@style/WhiteLinearLayoutStyle">
+
+    <TextView
+        android:id="@+id/cardTitleTextView"
+        android:textColor="@color/colorPurple"
+        style="@style/TextViewTitleWhiteStyle"/>
+
+    <View
+        android:background="@drawable/button_purple_normal"
+        style="@style/LineStyle"/>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/margin_small"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginTop="@dimen/margin_small"
+            android:text="@string/choose_muscle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Spinner
+            android:id="@+id/muscleSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginTop="@dimen/margin_small"
+            android:text="@string/choose_muscle_priority"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Spinner
+            android:id="@+id/muscleTargetSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</LinearLayout>
